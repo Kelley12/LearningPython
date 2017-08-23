@@ -13,7 +13,7 @@ excelFileDirectory = sys.argv[1]
 
 for excelFile in os.listdir(excelFileDirectory):
     # Load each excel workbook
-    if excelFile.endswith('.xlsx'):
+    if excelFile.lower().endswith('.xlsx'):
         print("Converting Excel file %s to CSV..." % excelFile)
         fileName = os.path.splitext(excelFile)[0]
         wb = openpyxl.load_workbook(os.path.join(excelFileDirectory, excelFile))
