@@ -9,7 +9,7 @@ emailaddr = input()
 print('Enter password')
 password = input()
 
-mtpObj.login(emailaddr, password)
+smtpObj.login(emailaddr, password)
 
 print('To Email address')
 recipientaddr = input()
